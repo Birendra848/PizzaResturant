@@ -119,37 +119,38 @@ nav ul li a {
 .contact-info p {
   font-size: 16px;
 }
+
 /* About Us Section */
 #about-us {
-  padding: 80px 20px;
-  display: flex;
+  padding: 80px 30px;
+  display: grid;
   align-items: center;
-  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
-#about-us div {
-  text-align: center;
+#about-us .about {
+  grid-column: 1 / 2;
+}
+
+#about-us .about-image {
+  grid-column: 2 / 3;
 }
 
 #about-us h2 {
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-left: 50px;
+  padding-bottom: 20px;
 }
 
 #about-us p {
   font-size: 18px;
-  margin-bottom: 40px;
+  margin-left: 50px;
 }
 
 #about-us img {
   max-width: 100%;
-  height: auto;
-  margin-top: 40px;
-}
-
-.about-image {
-  float: right;
-  margin-left: 20px;
+  margin-left: 50%;
 }
 /* Menu Section */
 #menu {
